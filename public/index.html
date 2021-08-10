@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/icon-192x192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#ff0000" />
+    <meta name="author" content="Satvik Gaikwad" />
+    <meta
+      name="description"
+      content="ToDoList made using ReactJS by Satvik Gaikwad"
+    />
+    <meta
+      name="google-site-verification"
+      content="WAetBlQRfemUrgWT1PCp-MnQYvL_zRR5ftisGJJV_EU"
+    />
+    <link rel="canonical" href="https://toact.netlify.app/" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/icon-192x192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <meta
+      name="keywords"
+      content="todolist, to-do-list, react-to-do-list, trello,pwa"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    /> -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    /> -->
+
+    <title>Toact</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if ("serviceWorker" in navigator) {
+        window.addEventListener("load", () => {
+          navigator.serviceWorker.register("service-worker.js");
+        });
+      }
+    </script>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+  </body>
+</html>

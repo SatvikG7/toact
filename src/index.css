@@ -1,0 +1,126 @@
+:root{
+  --header: #f00;
+  --cyan: #00ffff;
+  --bg: #0080ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: #707070;
+  border-radius: 16px;
+  box-shadow: inset 2px 2px 2px hsla(0, 0%, 100%, 0.25),
+    inset -2px -2px 2px rgba(0, 0, 0, 0.25);
+}
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+}
+
+.container {
+  width: 100%;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--header);
+  border: 6px dotted #000000;
+}
+
+.header p {
+  font-family: "Cascadia code", "Consolas", "Fira code", "Fira Sans", "fangsong",
+    "Code", "Roboto", "Helvetica";
+  color: #f0e68c;
+  font-size: 2.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin: 0 0 0 10px;
+}
+
+.btn {
+  font-family: "Helvetica", sans-serif;
+  text-transform: uppercase;
+  background: #303f9f;
+  color: #f0e68c;
+  letter-spacing: 0.1rem;
+  display: inline-block;
+  font-weight: 700;
+  transition: all 0.3s linear;
+  border: 2px solid #222;
+  width: 50%;
+  height: 3rem;
+  border-radius: 15px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  padding: 0.75rem 1.25rem;
+}
+
+.btn:hover {
+  color: #fff;
+  background: #283797;
+}
+
+.btn:focus {
+  outline: #000 solid 2px;
+}
+.todos-ul {
+  padding: 6px 6px 6px 6px !important;
+  background-color:#0080ff;
+  min-height: calc(100vh - 58px);
+}
+.footer {
+  background: var(--header);
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.about {
+  padding: 15px;
+  height: calc(100vh - 59px);
+  background: var(--bg);
+}
+.about h1 {
+  color: var(--cyan);
+}
+.aboutUl {
+  margin: 0 0 0 20px;
+  font-size: 1.25rem;
+}
+.madeUsing{
+  font-size: 1.25rem;
+  margin: 20px 0 0 20px;
+}
+.madeUsing ul a{
+  color: var(--cyan);
+}
+@media (min-width: 600px) {
+  .container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .footer {
+    width: 600px;
+  }
+}
