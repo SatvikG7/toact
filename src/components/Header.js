@@ -39,7 +39,7 @@ function Header({ toggleForm, formState }) {
   return (
     <div className="header">
       <Title />
-      <div>
+      <div className="headerBtns">
         {location.pathname === "/" && (
           <Button
             variant="contained"

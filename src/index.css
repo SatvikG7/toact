@@ -80,6 +80,11 @@ body {
 .btn:focus {
   outline: #000 solid 2px;
 }
+.headerBtns{
+  display: flex;
+  flex-direction: row;
+}
+
 .todos-ul {
   padding: 6px 6px 6px 6px !important;
   background-color:#0080ff;
