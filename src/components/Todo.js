@@ -11,8 +11,8 @@ const useStyles = makeStyles(() => ({
   cursor: {
     cursor: "pointer",
   },
-  border: {
-    boxShadow: "0 0 0 2px green, 0 0 0 3.5px cyan",
+  strike: {
+    textDecoration: "line-through",
   },
   todo: {
     display: "flex",
@@ -41,7 +41,7 @@ export default function Todo({ todo, onDelete, onToggle }) {
 
   return (
     <ListItem
-      className={[todo.imp ? classes.border : null, classes.td].join(" ")}
+      className={[todo.st ? classes.strike : null, classes.td].join(" ")}
       onDoubleClick={() => onToggle(todo.id)}
     >
       <ListItemText

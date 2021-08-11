@@ -1,10 +1,10 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import PropTypes from "prop-types";
 import Button from "@material-ui/core/Button";
 import { makeStyles } from "@material-ui/core/styles";
 import AddCircleTwoToneIcon from "@material-ui/icons/AddCircleTwoTone";
 import ArrowBackIcon from "@material-ui/icons/ArrowBack";
+import Title from "./Title";
 const useStyles = makeStyles(() => ({
   btn: {
     marginRight: "10px",
@@ -14,13 +14,13 @@ const useStyles = makeStyles(() => ({
     fontSize: "1rem",
   },
 }));
-function Header({ title, toggleForm, formState }) {
+function Header({ toggleForm, formState }) {
   const classes = useStyles();
   const location = useLocation();
 
   return (
     <div className="header">
-      <p>{title}</p>
+      <Title />
       {location.pathname === "/" && (
         <Button
           variant="contained"
@@ -47,11 +47,5 @@ function Header({ title, toggleForm, formState }) {
     </div>
   );
 }
-Header.defaultProps = {
-  title: "To Do List",
-};
 
-Header.propTypes = {
-  title: PropTypes.string.isRequired,
-};
 export default Header;

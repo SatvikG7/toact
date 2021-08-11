@@ -2,9 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="%PUBLIC_URL%/icon-192x192.png">
+    <link rel="icon" type="image/png" href="%PUBLIC_URL%/icon-256x256.png">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#ff0000" />
+    <meta name="theme-color" content="#0080ff" />
     <meta name="author" content="Satvik Gaikwad" />
     <meta
       name="description"
@@ -37,7 +37,7 @@
     <script>
       if ("serviceWorker" in navigator) {
         window.addEventListener("load", () => {
-          navigator.serviceWorker.register("service-worker.js");
+          navigator.serviceWorker.register("my-service-worker.js");
         });
       }
     </script>

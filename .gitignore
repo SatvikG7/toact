@@ -11,6 +11,9 @@
 # production
 /build
 
+# local script
+script.sh
+
 # misc
 .DS_Store
 .env.local

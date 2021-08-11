@@ -1,7 +1,5 @@
 import { useState } from "react";
 import TextField from "@material-ui/core/TextField";
-import Checkbox from "@material-ui/core/Checkbox";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
 import { makeStyles } from "@material-ui/core/styles";
 import { nanoid } from "nanoid";
 const useStyles = makeStyles(() => ({
@@ -39,7 +37,7 @@ function AddTodo({ onAdd }) {
   const classes = useStyles();
   const [text, setText] = useState("");
   const [day, setDay] = useState("");
-  const [imp, setImp] = useState(false);
+  const [st, setStrike] = useState(false);
   const onSubmit = (e) => {
     e.preventDefault();
     if (!text) {
@@ -47,10 +45,10 @@ function AddTodo({ onAdd }) {
       return;
     }
     var id = nanoid();
-    onAdd({ id, text, day, imp });
+    onAdd({ id, text, day, st});
     setText("");
     setDay("");
-    setImp(false);
+    setStrike(false);
   };
   return (
     <div className={classes.formDiv}>
@@ -74,17 +72,6 @@ function AddTodo({ onAdd }) {
             className: classes.input,
           }}
           onChange={(e) => setDay(e.target.value)}
-        />
-        <FormControlLabel
-          label="Important"
-          className={classes.cb}
-          control={
-            <Checkbox
-              checked={imp}
-              color="secondary"
-              onChange={(e) => setImp(e.currentTarget.checked)}
-            />
-          }
         />
         <input className="btn" type="submit" value="Save Todo" />
       </form>

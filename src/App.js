@@ -7,7 +7,7 @@ import Footer from "./components/Footer";
 import About from "./components/About";
 
 // *** Version ***
-const version = "1.1.9";
+const version = "2.0.1";
 
 
 function App() {
@@ -20,19 +20,19 @@ function App() {
           id: 1,
           text: "Task 1",
           day: "Jun 13th at 12:00pm",
-          imp: true,
+          st: true,
         },
         {
           id: 2,
           text: "Task 2",
           day: "Jun 13th at 12:00pm",
-          imp: false,
+          st: false,
         },
         {
           id: 3,
           text: "Task 3",
           day: "Jun 13th at 12:00pm",
-          imp: true,
+          st: true,
         },
       ])
     );
@@ -87,7 +87,7 @@ function App() {
     var tds = JSON.parse(localStorage.getItem("list"));
     tds.forEach((todo, index) => {
       if (todo.id === id) {
-        tds[index].imp = !tds[index].imp;
+        tds[index].st = !tds[index].st;
       }
     });
     localStorage.setItem("list", JSON.stringify(tds));
@@ -103,7 +103,6 @@ function App() {
     <Router>
       <div className="container">
         <Header
-          title="Toact"
           toggleForm={toggleForm}
           formState={showAddTodoForm}
         />

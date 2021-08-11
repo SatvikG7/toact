@@ -43,9 +43,8 @@ body {
   border: 6px dotted #000000;
 }
 
-.header p {
-  font-family: "Cascadia code", "Consolas", "Fira code", "Fira Sans", "fangsong",
-    "Code", "Roboto", "Helvetica";
+.title{
+  font-family: "Cascadia code", "Consolas", serif;
   color: #f0e68c;
   font-size: 2.5rem;
   font-weight: 300;
