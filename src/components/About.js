@@ -1,23 +1,5 @@
-import { useState } from "react";
-
-import Button from "@material-ui/core/Button";
 function About({ version }) {
-  const [installPrompt, setInstallPrompt] = useState();
-
-  window.addEventListener("beforeinstallprompt", (e) => {
-    setInstallPrompt(e);
-  });
-
-  const promptInstall = async () => {
-    console.log(installPrompt);
-    if (installPrompt !== null) {
-      installPrompt.prompt();
-      const { outcome } = await installPrompt.userChoice;
-      if (outcome === "accepted") {
-        setInstallPrompt(null);
-      }
-    }
-  };
+  
   return (
     <div className="about">
       <h1>V {version}</h1>
@@ -28,19 +10,6 @@ function About({ version }) {
           Clearing browser cache and similar activities will erase your
           previously entered todos (permanently 😈)
         </li>
-        {
-          installPrompt && (
-          <li>
-            <Button
-              onClick={() => promptInstall()}
-              variant="contained"
-              color="primary"
-            >
-              Add to Home screen
-            </Button>
-            for better performance
-          </li>
-        )}
       </ul>
       <div className="madeUsing">
         <ul>
