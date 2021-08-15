@@ -1,9 +1,9 @@
 # Toact 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/cc151835-f0b0-4f51-9eb7-6524307730bb/deploy-status)](https://app.netlify.com/sites/toact/deploys)
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)
-<h2>TOdolist + reACT = TOACT </h2>
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-blue?style=flat&logo=codesandbox)](https://githubbox.com/SatvikG7/toact) 
+[![Netlify Status](https://img.shields.io/badge/Netlify-Status-success?style=flat&logo=netlify)](https://app.netlify.com/sites/toact/deploys)
+![PRs Welcome](https://img.shields.io/badge/PRs-Welcome-important)
+## TOdolist + reACT = TOACT
 
-
-- ToDoList made using ReactJS by Satvik Gaikwad
-- Progressive Web App
-- Works Offline
+> - ToDoList made using ReactJS
+> - Progressive Web App
+> - Works Offline
