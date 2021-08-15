@@ -1,11 +1,12 @@
-const CACHE_NAME = "cache-v1";
-const DYNAMIC_CACHE_NAME = "dynamic-cache-v1";
+const CACHE_NAME = "cache-v2";
+const DYNAMIC_CACHE_NAME = "dynamic-cache-v2";
 const CACHE_THIS = [
   "/",
   "/index.html",
   "/about",
   "/manifest.json",
-  "/icon.svg"
+  "/icon.svg",
+  "/icon.png"
 ];
 
 self.addEventListener("install", (event) => {
