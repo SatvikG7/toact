@@ -2,7 +2,7 @@
   "theme_color": "#0080ff",
   "background_color": "#0080ff",
   "display": "standalone",
-  "scope": "/",
+  "scope": "https://toact.netlify.app/",
   "start_url": "/",
   "name": "Toact",
   "short_name": "Toact",
