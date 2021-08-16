@@ -1,5 +1,5 @@
-const CACHE_NAME = "cache-v3";
-const DYNAMIC_CACHE_NAME = "dynamic-cache-v3";
+const CACHE_NAME = "cache-v2";
+const DYNAMIC_CACHE_NAME = "dynamic-cache-v2";
 const CACHE_THIS = [
   "/",
   "/index.html",
@@ -48,7 +48,7 @@ self.addEventListener("fetch", (event) => {
       })
       .catch(() => {
         if (event.request.url.indexOf(".html") > -1) {
-          return caches.match("/index.html");
+          return caches.match("/");
         }
       })
   );
