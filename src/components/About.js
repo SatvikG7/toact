@@ -26,7 +26,7 @@ function About({ version }) {
         <li>Your todos are saved locally so do not care about privacy 😁</li>
         <li>
           Clearing browser cache and similar activities will erase your
-          previously entered todos (permanently 😈)
+          previously saved todos (permanently 😈)
         </li>
         {
           installPrompt && (
